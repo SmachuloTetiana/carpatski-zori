@@ -431,6 +431,8 @@ a:hover {
     .header .header-menu a {
       display: block;
       margin: 10px 20px; }
+      .header .header-menu a:hover {
+        color: #4caf50; }
       .header .header-menu a:first-child {
         margin: 10px 20px; }
       .header .header-menu a.active {

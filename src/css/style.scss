@@ -644,6 +644,10 @@ a:hover{
 				display: block;
 				margin: 10px 20px;
 
+				&:hover{
+					color: $green-color;
+				}
+
 				&:first-child{
 					margin: 10px 20px;
 				}
