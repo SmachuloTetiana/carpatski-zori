@@ -56,7 +56,7 @@ a:hover {
   color: #000;
   font-weight: 700; }
 
-.animation, .header .header-menu a:hover, .header .header-menu a.active, .order-room #order-form input[type="submit"], .about-us .about-us-text button, .advantages-box .advantages-title p, .footer .contacts a, .footer .footer-button {
+.animation, .header .header-menu a:hover, .header .header-menu a.active, .order-room #order-form input[type="submit"], .about-us .about-us-text button, .advantages-box .advantages-title a, .footer .contacts a, .footer .footer-button {
   -webkit-transition: 0.4s Ease;
   -moz-transition: 0.4s Ease;
   -o-transition: 0.4s Ease;
@@ -87,7 +87,8 @@ a:hover {
     position: absolute;
     right: 20px;
     top: -30px;
-    display: none; }
+    display: none;
+    cursor: pointer; }
     .header .mobile-button span {
       display: block;
       width: 50px;
@@ -280,12 +281,12 @@ a:hover {
     left: 0;
     padding: 0 5px;
     background: rgba(76, 175, 80, 0.8); }
-    .advantages-box .advantages-title p {
+    .advantages-box .advantages-title a {
       font-size: 18px;
       line-height: 22px;
       font-weight: 400;
       color: #FFF; }
-  .advantages-box:hover .advantages-title p {
+  .advantages-box:hover .advantages-title a {
     transform: translateY(20px); }
 
 /*** End Advantages ***/

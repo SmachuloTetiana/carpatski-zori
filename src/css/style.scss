@@ -127,6 +127,7 @@ a:hover{
 		right: 20px;
 		top: -30px;
 		display: none;
+		cursor: pointer;
 
 		span{
 			display: block;
@@ -400,7 +401,7 @@ a:hover{
 		padding: 0 5px;
 		background: rgba(76,175,80, .8);
 		
-		p{
+		a{
 			font-size: 18px;
 			line-height: 22px;
 			font-weight: 400;
@@ -410,7 +411,7 @@ a:hover{
 	}
 
 	&:hover{
-		.advantages-title p{
+		.advantages-title a{
 			transform: translateY(20px);
 		}
 	}
