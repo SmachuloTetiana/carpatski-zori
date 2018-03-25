@@ -1,0 +1,457 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background: #FFF;
+  font-family: 'Roboto', sans-serif; }
+
+p {
+  margin: 0; }
+
+a:hover {
+  text-decoration: none; }
+
+/*** Slider ***/
+.slider-box {
+  min-height: 765px;
+  max-height: 765px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 155px; }
+
+.slick-dots {
+  width: 100%;
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  transform: translateX(-50%); }
+  .slick-dots li {
+    float: left;
+    list-style: none;
+    margin: 0 7px; }
+    .slick-dots li button {
+      text-indent: -999px;
+      width: 10px;
+      height: 10px;
+      border: none;
+      background: rgba(255, 255, 255, 0.4); }
+    .slick-dots li.slick-active button {
+      background: #4caf50; }
+
+.title {
+  font-size: 48px;
+  font-weight: 400;
+  color: #FFF; }
+
+.subtitle {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #FFF;
+  margin-top: 30px; }
+
+.box-title {
+  font-size: 48px;
+  color: #000;
+  font-weight: 700; }
+
+.animation, .header .header-menu a:hover, .header .header-menu a.active, .order-room #order-form input[type="submit"], .about-us .about-us-text button, .advantages-box .advantages-title p, .footer .contacts a, .footer .footer-button {
+  -webkit-transition: 0.4s Ease;
+  -moz-transition: 0.4s Ease;
+  -o-transition: 0.4s Ease;
+  transition: 0.4s Ease; }
+
+/*** Slider ***/
+/*** Menu ***/
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  padding: 40px 0 20px 0;
+  background: rgba(255, 255, 255, 0.5); }
+  .header .header-menu {
+    display: flex;
+    justify-content: flex-end; }
+    .header .header-menu a {
+      margin-left: 30px;
+      font-size: 24px;
+      color: #000; }
+      .header .header-menu a:hover, .header .header-menu a.active {
+        color: #FFF; }
+      .header .header-menu a:first-child {
+        margin: 0; }
+  .header .mobile-button {
+    position: absolute;
+    right: 20px;
+    top: -30px;
+    display: none; }
+    .header .mobile-button span {
+      display: block;
+      width: 50px;
+      height: 2px;
+      margin: 10px 0;
+      background: #FFF; }
+
+/*** End Menu ***/
+/*** Order Room ***/
+.order-room {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px 0 60px 0;
+  margin-top: -204px;
+  position: relative;
+  z-index: 1; }
+  .order-room h2 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #FFF;
+    margin-bottom: 30px; }
+  .order-room #order-form {
+    display: flex;
+    justify-content: space-between; }
+    .order-room #order-form input[type="text"] {
+      background: #FFF;
+      border: none;
+      font-size: 14px;
+      color: #757575;
+      font-weight: 400;
+      padding: 0 15px;
+      outline: none; }
+    .order-room #order-form #datepicker-from,
+    .order-room #order-form #datepicker-to {
+      width: 170px;
+      background: #fff url(../img/date.png) no-repeat;
+      background-position: 95% center; }
+    .order-room #order-form select {
+      outline: none;
+      padding: 0 15px;
+      width: 150px;
+      font-size: 14px;
+      color: #757575;
+      font-weight: 400;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background: #fff url(../img/arrow.png) no-repeat;
+      background-position: 90% center; }
+    .order-room #order-form input[type="submit"] {
+      width: 205px;
+      height: 45px;
+      line-height: 45px;
+      font-size: 14px;
+      color: #FFF;
+      font-weight: 400;
+      background: #4caf50;
+      border: none;
+      cursor: pointer; }
+      .order-room #order-form input[type="submit"]:hover {
+        background: #1b5e20; }
+
+/*** End Order Room ***/
+/*** About Us ***/
+.about-us {
+  margin: 105px 0 70px 0;
+  padding: 60px 0 130px 0;
+  position: relative; }
+  .about-us .about-us-text {
+    background: #65b567;
+    padding: 20px 0 105px 0; }
+    .about-us .about-us-text p {
+      margin: 25px 0 0 0;
+      font-size: 18px;
+      font-weight: 400;
+      color: #FFF;
+      padding-right: 40px; }
+    .about-us .about-us-text button {
+      width: 205px;
+      height: 48px;
+      float: right;
+      margin-right: 195px;
+      background: none;
+      border: 1px solid #FFF;
+      font-size: 16px;
+      color: #FFF;
+      font-weight: 400;
+      margin-top: 50px;
+      cursor: pointer; }
+      .about-us .about-us-text button:hover {
+        background: #1b5e20;
+        border-color: #1b5e20; }
+  .about-us .about-us-photo-top {
+    width: 45%;
+    height: 410px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0; }
+  .about-us .about-us-photo-bottom {
+    width: 40%;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    right: 10%; }
+
+/*** End About Us ***/
+/*** Why To Choose Us ***/
+.why-to-choose-us {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed;
+  padding-bottom: 100px; }
+  .why-to-choose-us .box-title {
+    color: #424242;
+    margin: 30px 0 70px 0; }
+  .why-to-choose-us .tabs-header ul li {
+    list-style: none;
+    margin-top: 60px; }
+    .why-to-choose-us .tabs-header ul li:first-child {
+      margin-top: 0; }
+    .why-to-choose-us .tabs-header ul li a {
+      display: flex;
+      flex-direction: row; }
+    .why-to-choose-us .tabs-header ul li span {
+      font-size: 14px;
+      font-weight: 400;
+      color: #000;
+      display: flex;
+      align-items: center; }
+    .why-to-choose-us .tabs-header ul li .svg-class {
+      margin-right: 45px;
+      fill: #757575; }
+    .why-to-choose-us .tabs-header ul li.active svg {
+      fill: #4caf50; }
+  .why-to-choose-us .tabs-item {
+    display: none; }
+    .why-to-choose-us .tabs-item.active {
+      display: block; }
+    .why-to-choose-us .tabs-item svg {
+      fill: #4caf50; }
+  .why-to-choose-us .tabs-item p {
+    margin: 0;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #000; }
+  .why-to-choose-us .tabs-item .svg-class {
+    position: relative;
+    z-index: 1; }
+  .why-to-choose-us .tabs-item span {
+    font-weight: 700;
+    font-size: 80px;
+    color: #e0e0e0;
+    position: relative;
+    left: -20px;
+    z-index: 0; }
+
+/*** End Why To Choose Us ***/
+/*** Advantages ***/
+.mt-70 {
+  margin-top: 70px; }
+
+.mb-70 {
+  margin-bottom: 70px; }
+
+.advantages {
+  padding-top: 60px; }
+
+.advantages-box {
+  position: relative;
+  cursor: pointer;
+  margin: 10px 0;
+  box-shadow: 0 0 38px rgba(0, 0, 0, 0.2); }
+  .advantages-box.boxUp {
+    position: relative;
+    top: -60px; }
+  .advantages-box .advantages-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 5px;
+    background: rgba(76, 175, 80, 0.8); }
+    .advantages-box .advantages-title p {
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 400;
+      color: #FFF; }
+  .advantages-box:hover .advantages-title p {
+    transform: translateY(20px); }
+
+/*** End Advantages ***/
+/*** Interest ***/
+.interest {
+  padding: 60px 0 125px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  .interest .box-title {
+    color: #FFF;
+    margin-bottom: 60px; }
+  .interest p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFF; }
+
+/*** End Interest ***/
+/*** Footer ***/
+.footer {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 45px 0 115px 0; }
+  .footer .contacts {
+    background: #FFF;
+    padding: 50px 25px;
+    box-shadow: 5px 0 114px rgba(0, 0, 0, 0.1); }
+    .footer .contacts p {
+      font-size: 18px;
+      font-weight: 400;
+      color: #000;
+      margin: 0; }
+    .footer .contacts a {
+      display: block;
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 400;
+      color: #000; }
+      .footer .contacts a:hover {
+        color: #4caf50; }
+  .footer .footer-menu {
+    display: flex;
+    justify-content: space-around; }
+    .footer .footer-menu ul li {
+      list-style: none;
+      margin-top: 25px; }
+      .footer .footer-menu ul li:first-child {
+        margin-top: 50px; }
+      .footer .footer-menu ul li a {
+        color: #4caf50;
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: 400; }
+        .footer .footer-menu ul li a:hover {
+          color: #1b5e20; }
+  .footer .footer-button {
+    width: 355px;
+    font-size: 24px;
+    color: #4caf50;
+    border: 1px solid #4caf50;
+    background: none;
+    height: 85px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 65px; }
+    .footer .footer-button:hover {
+      color: #FFF;
+      border-color: #1b5e20;
+      background: #1b5e20; }
+
+.mt-25 {
+  margin-top: 25px; }
+
+/*** End Footer ***/
+@media (max-width: 1024px) {
+  .header .header-menu a {
+    font-size: 17px; }
+  .about-us {
+    padding-bottom: 60px; }
+    .about-us .about-us-photo-bottom {
+      right: 8%; }
+  .order-room #order-form input {
+    width: 15%; }
+  .order-room #order-form input[type="submit"] {
+    width: 15%; }
+  .order-room #order-form #datepicker-from,
+  .order-room #order-form #datepicker-to,
+  .order-room #order-form select {
+    width: 18%; }
+  .footer .footer-button {
+    width: 200px;
+    font-size: 17px; }
+  .advantages-box .advantages-title {
+    width: 70%; }
+  .about-us .about-us-text button {
+    margin-right: 0;
+    float: left; }
+  .advantages-box.boxUp {
+    top: 0; } }
+
+@media (max-width: 767px) {
+  .slider-box {
+    text-align: center; }
+  .why-to-choose-us .tabs-header ul li {
+    margin: 10px; }
+  .footer .contacts,
+  .box-title {
+    text-align: center; }
+  .about-us {
+    margin: 0;
+    padding: 0; }
+    .about-us .about-us-text {
+      text-align: center; }
+      .about-us .about-us-text p {
+        padding: 0; }
+      .about-us .about-us-text button {
+        float: none; }
+    .about-us .about-us-photo-top,
+    .about-us .about-us-photo-bottom {
+      display: none; }
+  .interest {
+    text-align: center; }
+  .order-room {
+    margin-top: -310px; }
+    .order-room #order-form {
+      display: block; }
+      .order-room #order-form input,
+      .order-room #order-form select {
+        width: 46% !important;
+        float: left;
+        margin: 0 2%;
+        height: 45px;
+        margin-top: 5px; }
+  .header .header-menu {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    text-align: right;
+    background: #FFF; }
+    .header .header-menu a {
+      display: block;
+      margin: 10px 20px; }
+      .header .header-menu a:first-child {
+        margin: 10px 20px; }
+      .header .header-menu a.active {
+        color: #4caf50; }
+  .header .mobile-button {
+    display: block; }
+  .slick-dots {
+    bottom: 40%;
+    text-align: center; }
+    .slick-dots li {
+      float: none;
+      display: inline; } }
+
+@media (max-width: 425px) {
+  .footer .footer-menu {
+    display: block;
+    text-align: center; }
+    .footer .footer-menu ul {
+      width: 50%;
+      float: left; }
+  .order-room h2 {
+    font-size: 20px; }
+  .slick-dots {
+    bottom: 38%; } }

@@ -1,0 +1,694 @@
+
+
+$white-color: #FFF;
+$black-color: #000;
+$green-color: #4caf50;
+$green-hover-color: #1b5e20;
+$font-size-24: 24px;
+$font-size-48: 48px;
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background: $white-color;
+	font-family: 'Roboto', sans-serif;
+}
+
+p{
+	margin: 0;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+/*** Slider ***/
+
+.slider-box{
+	min-height: 765px;
+	max-height: 765px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 155px;
+}
+
+.slick-dots{
+	width: 100%;
+	position: absolute;
+	bottom: 25%;
+	left: 50%;
+	transform: translateX(-50%);
+
+	li{
+		float: left;
+		list-style: none;
+		margin: 0 7px;
+
+		button{
+			text-indent: -999px;
+			width: 10px;
+			height: 10px;
+			border: none;
+			background: rgba(255,255,255, .4);
+		}
+
+		&.slick-active button{
+			background: $green-color;
+		}
+	}
+}
+
+.title{
+	font-size: 48px;
+	font-weight: 400;
+	color: $white-color;
+}
+
+.subtitle{
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 400;
+	color: $white-color;
+	margin-top: 30px;
+}
+
+.box-title{
+	font-size: 48px;
+	color: $black-color;
+	font-weight: 700;
+}
+
+.animation{
+	-webkit-transition: 0.4s Ease;
+	-moz-transition: 0.4s Ease;
+	-o-transition: 0.4s Ease;
+	transition: 0.4s Ease;
+}
+
+/*** Slider ***/
+
+/*** Menu ***/
+
+.header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	padding: 40px 0 20px 0;
+	background: rgba(255,255,255, .5);
+
+	.header-menu{
+		display: flex;
+		justify-content: flex-end;
+
+		a{
+			margin-left: 30px;
+			font-size: 24px;
+			color: $black-color;
+
+			&:hover,
+			&.active{
+				color: $white-color;
+				@extend .animation;
+			}
+
+			&:first-child{
+				margin: 0;
+			}
+		}
+	}
+
+	.mobile-button{
+		position: absolute;
+		right: 20px;
+		top: -30px;
+		display: none;
+
+		span{
+			display: block;
+			width: 50px;
+			height: 2px;
+			margin: 10px 0;
+			background: $white-color;
+		}
+	}
+}
+
+/*** End Menu ***/
+
+/*** Order Room ***/
+
+.order-room{
+	background: rgba(0,0,0, .5);
+	padding: 40px 0 60px 0;
+	margin-top: -204px;
+	position: relative;
+	z-index: 1;
+
+	h2{
+		font-size: 24px;
+		font-weight: 400;
+		color: $white-color;
+		margin-bottom: 30px;
+	}
+
+	#order-form{
+		display: flex;
+		justify-content: space-between;
+
+		input[type="text"]{
+			background: $white-color;
+			border: none;
+			font-size: 14px;
+			color: #757575;
+			font-weight: 400;
+			padding: 0 15px;
+			outline: none;
+		}
+
+		#datepicker-from,
+		#datepicker-to{
+			width: 170px;
+			background: #fff url(../img/date.png) no-repeat;
+			background-position: 95% center;
+		}
+
+		select{
+			outline: none;
+			padding: 0 15px;
+			width: 150px;
+			font-size: 14px;
+			color: #757575;
+			font-weight: 400;
+			appearance: none;  
+			-webkit-appearance: none; 
+			-moz-appearance: none;
+			background: #fff url(../img/arrow.png) no-repeat;
+			background-position: 90% center;
+		}
+	
+		input[type="submit"]{
+			width: 205px;
+			height: 45px;
+			line-height: 45px;
+			font-size: 14px;
+			color: $white-color;
+			font-weight: 400;
+			background: $green-color;
+			border: none;
+			cursor: pointer;
+			@extend .animation;
+
+			&:hover{
+				background: $green-hover-color;
+			}
+		}
+	}
+}
+
+/*** End Order Room ***/
+
+/*** About Us ***/
+
+.about-us{
+	margin: 105px 0 70px 0;
+	padding: 60px 0 130px 0;
+	position: relative;
+
+	.about-us-text{
+		background: #65b567;
+		padding: 20px 0 105px 0;
+
+		p{
+			margin: 25px 0 0 0;
+			font-size: 18px;
+			font-weight: 400;
+			color: $white-color;
+			padding-right: 40px;
+		}
+
+		button{
+			width: 205px;
+			height: 48px;
+			float: right;
+			margin-right: 195px;
+			background: none;
+			border: 1px solid $white-color;
+			font-size: 16px;
+			color: $white-color;
+			font-weight: 400;
+			margin-top: 50px;
+			cursor: pointer;
+			@extend .animation;
+
+			&:hover{
+				background: $green-hover-color;
+				border-color: $green-hover-color;
+			}
+		}
+	}
+
+	.about-us-photo-top{
+		width: 45%;
+		height: 410px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: absolute;
+		top: 0;
+		right: 0; 
+	}
+
+	.about-us-photo-bottom{
+		width: 40%;
+		height: 350px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: absolute;
+		bottom: 0;
+		right: 10%; 
+	}
+}
+
+/*** End About Us ***/
+
+/*** Why To Choose Us ***/
+
+
+.why-to-choose-us{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	background-attachment: fixed;
+	padding-bottom: 100px;
+
+	.box-title{
+		color: #424242;
+		margin: 30px 0 70px 0;
+	}
+
+	.tabs-header ul{
+		li{
+			list-style: none;
+			margin-top: 60px;
+
+			&:first-child{
+				margin-top: 0;
+			}
+
+			a{
+				display: flex;
+				flex-direction: row;
+			}
+			
+			span{
+				font-size: 14px;
+				font-weight: 400;
+				color: $black-color;
+				display: flex;
+				align-items: center;
+			}
+
+			.svg-class{
+				margin-right: 45px;
+				fill: #757575;
+			}
+
+			&.active svg{
+				fill: $green-color;
+			}
+		}
+	}
+
+	.tabs-item{
+		display: none;
+
+		&.active{
+			display: block;
+		}
+
+		svg{
+			fill: $green-color;
+		}
+	}
+
+	.tabs-item{
+		p{
+			margin: 0;
+			font-size: 20px;
+			line-height: 23px;
+			font-weight: 400;
+			color: $black-color;
+		}
+
+		.svg-class{
+			position: relative;
+			z-index: 1;
+		}
+
+		span{
+			font-weight: 700;
+			font-size: 80px;
+			color: #e0e0e0;
+			position: relative;
+			left: -20px;
+			z-index: 0;
+		}
+	}
+}
+
+/*** End Why To Choose Us ***/
+
+/*** Advantages ***/
+
+.mt-70{
+	margin-top: 70px;
+}
+
+.mb-70{
+	margin-bottom: 70px;
+}
+
+.advantages{
+	padding-top: 60px;
+}
+
+.advantages-box{
+	position: relative;
+	cursor: pointer;
+	margin: 10px 0;
+	box-shadow: 0 0 38px rgba(0,0,0, .2);
+
+	&.boxUp{
+		position: relative;
+		top: -60px;
+	}
+
+	.advantages-title{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		width: 50%;
+		height: 150px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding: 0 5px;
+		background: rgba(76,175,80, .8);
+		
+		p{
+			font-size: 18px;
+			line-height: 22px;
+			font-weight: 400;
+			color: $white-color;
+			@extend .animation;
+		}
+	}
+
+	&:hover{
+		.advantages-title p{
+			transform: translateY(20px);
+		}
+	}
+}
+
+/*** End Advantages ***/
+
+/*** Interest ***/
+
+.interest{
+	padding: 60px 0 125px 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+	.box-title{
+		color: $white-color;
+		margin-bottom: 60px;
+	}	
+
+	p{
+		font-size: 18px;
+		font-weight: 400;
+		color: $white-color;
+	}
+}
+
+/*** End Interest ***/
+
+/*** Footer ***/
+
+.footer{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 45px 0 115px 0;
+
+	.contacts{
+		background: $white-color;
+		padding: 50px 25px;
+		box-shadow: 5px 0 114px rgba(0,0,0, .1);
+		
+		p{
+			font-size: 18px;
+			font-weight: 400;
+			color: $black-color;
+			margin: 0;
+		}
+
+		a{
+			display: block;
+			font-size: 18px;
+			line-height: 20px;
+			font-weight: 400;
+			color: $black-color;
+			@extend .animation;
+
+			&:hover{
+				color: $green-color;
+			}
+		}
+	}
+
+	.footer-menu{
+		display: flex;
+		justify-content: space-around;
+
+		ul{
+			li{
+				list-style: none;
+				margin-top: 25px; 
+
+				&:first-child{
+					margin-top: 50px;
+				}
+
+				a{
+					color: $green-color;
+					font-size: 18px;
+					line-height: 18px;
+					font-weight: 400;
+					&:hover{
+						color: $green-hover-color;
+					}
+				}
+			}
+		}
+	}
+
+	.footer-button{
+		width: 355px;
+		font-size: 24px;
+		color: $green-color;
+		border: 1px solid $green-color;
+		background: none;
+		height: 85px;
+		cursor: pointer;
+		text-transform: uppercase;
+		@extend .animation;
+		margin-top: 65px;
+
+		&:hover{
+			color: $white-color;
+			border-color: $green-hover-color;
+			background: $green-hover-color;
+		}
+	}
+}
+
+.mt-25{
+	margin-top: 25px;
+}
+
+/*** End Footer ***/
+
+@media (max-width: 1024px){
+
+	.header .header-menu a{
+		font-size: 17px;
+	}
+
+	.about-us{
+		padding-bottom: 60px;
+
+		.about-us-photo-bottom{
+			right: 8%;
+		}
+	}
+
+	.order-room #order-form{
+		input{
+			width: 15%;
+		}
+
+		input[type="submit"]{
+			width: 15%;
+		}
+
+		#datepicker-from,
+		#datepicker-to,
+		select{
+			width: 18%;
+		}
+	}
+
+	.footer .footer-button{
+		width: 200px;
+		font-size: 17px;
+	}
+
+	.advantages-box .advantages-title{
+		width: 70%;
+	}
+
+	.about-us .about-us-text button{
+		margin-right: 0;
+		float: left;
+	}
+
+	.advantages-box.boxUp{ top: 0; }
+
+}
+
+@media ( max-width: 767px ){
+
+	.slider-box{
+		text-align: center;
+	}
+	.why-to-choose-us .tabs-header ul li{
+		margin: 10px;
+	}
+
+	.footer .contacts,
+	.box-title{
+		text-align: center;
+	}
+
+	.about-us{
+		margin: 0;
+		padding: 0;
+
+		.about-us-text{
+			text-align: center;
+			p{
+				padding: 0;
+			}
+
+			button{
+				float: none;
+			}
+		}
+		
+		.about-us-photo-top,
+		.about-us-photo-bottom{
+			display: none
+		}
+	}
+
+	.interest{
+		text-align: center;
+	}
+
+	.order-room{
+		margin-top: -310px;
+
+		#order-form{
+			display: block;
+
+			input,
+			select{
+				width: 46% !important;
+				float: left;
+				margin: 0 2%;
+				height: 45px;
+				margin-top: 5px;
+			}
+		}
+	}
+
+	.header {
+		.header-menu{
+			display: none;
+			position: absolute;
+			top: 20px;
+			left: 0;
+			right: 0;
+			text-align: right;
+			background: $white-color;
+
+			a{
+				display: block;
+				margin: 10px 20px;
+
+				&:first-child{
+					margin: 10px 20px;
+				}
+
+				&.active{
+					color: $green-color;
+				}
+			}
+		}
+
+		.mobile-button{
+			display: block;
+		}
+	}
+
+	.slick-dots{
+		bottom: 40%;
+		text-align: center;
+
+		li{
+			float: none;
+			display: inline;
+		}
+	}
+
+}
+
+@media ( max-width: 425px ){
+
+	.footer .footer-menu{
+		display: block;
+		text-align: center;
+
+		ul{
+			width: 50%;
+			float: left;
+		}
+	}
+
+	.order-room h2{
+		font-size: 20px;
+	}
+
+	.slick-dots{
+		bottom: 38%;
+	}
+
+}
